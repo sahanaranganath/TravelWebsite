@@ -1,0 +1,695 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+/*=======Navbar===*/
+.bg{
+    background: #000000;
+}
+.main-navbar-light{
+    background:transparent!important;
+    position: absolute;
+    color: white;
+    left:0;
+    right:0;
+    z-index:3;
+    top:10px;
+}
+/*====End of Navabr==*/
+
+/*====Hero Section===*/
+.hero-wrap{
+    width:100%;
+    height:850px;
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index:0;
+}
+.hero-wrap .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    content:"";
+    opacity: .5;
+   
+    height: 850px;
+}
+.hero-wrap .main-text{
+    height:800px!important;
+
+}
+.main-text h1{
+    font-size:60px;
+    color:#fff;
+    line-height:1.1;
+    font-weight: bold;
+    
+}
+.main-text p{
+    line-height: 1.5;
+   color:#fff;
+}
+.btn-hero{
+    background-color: #882d2d!important;
+    color:#fff!important;
+    margin-right:5px;
+    margin-left:5px;
+    animation:skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding:5px 17px;
+}
+@keyframes skew{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+/*====End of Hero Section===*/
+ .btn-search{
+    background:#021633!important;
+    border:2px solid #021633;
+    color:#fff!important;
+    margin-left: 3px!important;
+}
+ .btn-search:hover{
+    border:2px solid #021633;
+    background:transparent;
+    color:#021633;
+}
+.section-search {
+    background: #923232; }
+  
+  
+  @media (min-width: 768px) {
+    .tabulation-search {
+      margin-top: -60px; } }
+  
+  .tab-search .nav-pills p {
+    margin-bottom: 0; }
+  
+  .tab-search .nav-pills .nav-link {
+    float: left;
+    border-radius: 0;
+    margin-bottom: 0;
+    background: white; }
+    .tab-search .nav-pills .nav-link.active {
+      background: #8d2a2a; }
+      @media (min-width: 768px) {
+        .tab-search .nav-pills .nav-link.active {
+          margin-top: -10px; } }
+    @media (max-width: 767.98px) {
+      .tab-search .nav-pills .nav-link {
+        display: block;
+        width: 100%; } }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Corben:700');
+
+h1 {
+	font-family: 'Corben', cursive;
+	font-size: 6rem;
+	color: white;
+	letter-spacing: 0.1rem;
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+
+
+
+
+
+
+
+/*====Welcome Section====*/
+.heading-section h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.img-wrap .effect{
+    position: relative;
+    margin-bottom: 0;
+    display: block;
+}
+.img-wrap .effect:after{
+    z-index:-1;
+    content:"";
+    position: absolute;
+    top:10px;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    background: #862525;
+    transition: .3s all ease-in-out;
+}
+.img-wrap:hover .effect:after{
+    right:-10px;
+    bottom:-10px;
+    position: absolute;
+}
+.btn-about{
+    background-color: #802b2b!important;
+    color:#fff!important;
+    margin-right:5px;
+    margin-left:5px;
+    animation:skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding:5px 17px;
+}
+@keyframes skew{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+
+/*==========Popular Places===========*/
+/*----Popular Places---*/
+.popular {
+    background-image: url(./images/hero-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 340px;
+  }
+  .popular:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:linear-gradient(rgba(173, 173, 136, 0.5),rgba(170, 169, 128, 0.4)),
+    url(./images/hero-2.jpg)center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .all-image {
+    padding-bottom: 75px;
+    position: relative;
+    margin-top: -295px;
+  }
+  .all-image .single-img {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .all-image .single-img .img-thumb {
+    height: 410px;
+  }
+  .all-image .single-img .img-thumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .all-image .single-img .img-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(141, 87, 87, 0.6);
+    transform: translateX(-50%);
+    transition: 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .all-image .single-img .img-hover .title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .all-image .single-img .img-hover h3 {
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .all-image .single-img:hover .img-hover {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+/*==========End of Popular Places===========*/
+
+
+
+
+/*========== Services section===========*/
+.services .icon-circle{
+    text-align: center;
+    padding: 40px 20px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 2px 4px rgba(19,19,19,0.5);
+}
+.services .icon-circle.purple{
+    background:#224e91;
+    color:#fff;
+}
+.services .icon-circle.pink{
+    background: #224e91;
+    color:#fff;
+}
+.services .icon-circle.yellow{
+    background: #224e91;
+    color:#fff;
+}
+.services .icon-circle.blue{
+    background: #224e91;
+    color:#fff;
+
+}
+.services .icon-circle .icon{
+    margin:0 auto;
+    width: 64px;
+    height:64px;
+    border-radius: 50px;
+    border:1px solid #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+.services .icon-circle .icon i{
+    font-size: 28px;
+}
+.services .icon-circle h4{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.services .icon-circle p{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.services .icon-circle:hover{
+    border-color: #b9c428;
+    box-shadow: 0px 0 25px 0 rgba(3,75,122,0.1);
+}
+.services .icon-circle:hover .icon{
+    color:#fff;
+    background: #488a2e;
+}
+/*==========End of Services section===========*/
+
+
+.team .member{
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+}
+.team .member .member-img{
+    position: relative;
+    overflow: hidden;
+}
+.team .member .social{
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out .3s;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+}
+.team .member .social a{
+    transition: color 0.3s;
+    color: #000;
+    margin:0 10px;
+    padding-top:8px;
+    display: inline-block;
+}
+.team .member .social a:hover{
+    color:#2181ff;
+}
+.team .member .social i{
+    font-size: 18px;
+    margin:0 2px;
+}
+.team .member .member-info{
+    padding: 25px 15px;
+}
+
+.team .member .member-info h4{
+    font-weight: bold;
+    margin-bottom:5px;
+    font-size: 18px;
+    color:#000;
+}
+
+.team .member .member-info span{
+    display:block ;
+    font-size: 14px;
+    font-weight: lighter;
+    color:#000;
+}
+
+.team .member .member-info p{
+    font-style: italic;
+    font-style: 15px;
+    line-height: 26px;
+    color:#000;
+}
+
+.team .member:hover .social{
+    opacity: 1;
+}
+
+
+/*======Testimonial section===*/
+.testimonial-section{
+    padding-bottom: 60px;
+
+}
+.testimonial-section .section-title h2{
+    font-weight: 60px;
+    color:#000;
+    margin-top: 0;
+}
+.testimonial-item{
+    margin-bottom:40px;
+}
+.testimonial-item .test-date{
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    color:#242424;
+    opacity:0.5;
+    font-weight: 600;
+    line-height: 36px;
+}
+.testimonial-item h4{
+    color:#242424;
+    font-weight:600;
+    margin-bottom: 6px;
+}
+.testimonial-item .rating{
+    margin-bottom:15px;
+}
+.testimonial-item .rating i{
+    color:#ed8a19;
+}
+.testimonial-item p{
+    letter-spacing: 0.2px;
+    margin-bottom:30px;
+}
+.testimonial-item .customer{
+    overflow:hidden;
+}
+.testimonial-item .customer .customer-photo{
+   float:left;
+   margin-right:18px;
+}
+.testimonial-item .customer .customer-photo img{
+  height:60px;
+  width:60px;
+  border-radius: 50%;
+}
+.testimonial-item .customer .test-text{
+    float:left;
+    padding-top:5px;
+}
+.testimonial-item .customer .test-text h6{
+    color:#033e55;
+    font-weight:600;
+    line-height: 24px;
+}
+.testimonial-item .customer .test-text h6 span{
+    display: block;
+    font-size: 12px;
+    color: #242424;
+    letter-spacing:0.2px;
+}
+/*=====End of testimonial section===*/
+
+
+/*=====Contact section===*/
+.contact .icon-box{
+    color:#3e818d;
+    text-align:center;
+    box-shadow:0 0 15px rgba(206, 180, 68, 0.6);
+    padding:20px 0 30px 0;
+}
+.contact .icon-box i.fab{
+    font-size:20px;
+    color:#0292f1;
+    border-radius: 50%;
+    padding:8px;
+    background:#95964f;
+}
+.contact .icon-box h3{
+    font-size:20px;
+    color:rgb(156, 75, 65);
+    font-weight:bold;
+    margin:10px 0;
+}
+.contact .icon-box p{
+    padding:0;
+    line-height:24px;
+    font-size:14px;
+    margin-bottom:0;
+}
+.contact .social-links{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+}
+.contact .social-links a{
+    font-size:16px;
+    display: inline-block;
+    color:#fff;
+    line-height:1;
+    margin:0 8px;
+    transition: 0.3s;
+    padding:10px;
+    border-radius:50px;
+    border:1px solid #030942;
+}
+.contact .social-links a:hover{
+    color:#fff;
+    border-color:#030942;
+    background:#813131;
+}
+.contact form{
+    box-shadow:0 0 15px rgb(160, 140, 73);
+    padding:27px;
+
+    
+}
+/*=====End of contact section===*/
+
+
+.instagram .container-fluid{
+    padding-left:0;
+    padding-right:0;
+}
+.instagram .insta-img{
+    display:block;
+    height:280px;
+    position:relative;
+
+}
+.instagram .insta-img .icon{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(47,137,5225,0.8);
+    opacity:0;
+    transition:all 0.3s ease;
+
+}
+.instagram .insta-img:hover .icon{
+    opacity:1;
+}
+.instagram .heading-section h2{
+    font-size:30px;
+}
+#footer{
+    padding:0 0 30px 0;
+    color:#000;
+    font-size:16px;
+    background:#39737a;
+}
+#footer .footer-newsletter{
+    padding:50px 0;
+    background:#862a2a;
+    text-align:center;
+    font-size:15px;
+}
+#footer .footer-newsletter h4{
+    font-size:24px;
+    margin:0 0 20px 0;
+    padding:0;
+    line-height: 1;
+    font-weight: bold;
+    color:#000;
+}
+#footer .footer-newsletter form{
+    margin-top:30px;
+    background:#fff;
+    padding:6px 10px;
+    position:relative;
+    border-radius:4px;
+    box-shadow: 0px 2px 15px rgba(0,25,41,0.4);
+    text-align:left;
+}
+#footer .footer-newsletter form input[type="email"]{
+    border:0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+#footer .footer-newsletter form input[type="submit"]{
+    position:absolute;
+    top:0;
+    right:-2px;
+    bottom:0;
+    border:0;
+    background: none;
+    font-size:16px;
+    padding:0 20px;
+    background: #3fa15d;
+    color:#fff;
+    transition:0.3s;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0px 2px 15px rgba(253, 253, 253, 0.7);
+}
+#footer .footer-newsletter form input[type="submit"]:hover{
+    background:#992f2f;
+}
+#footer .copyright{
+    float:left;
+    color:#000;
+}
+#footer .credits{
+    float: right;
+    font-size:16px;
+    color:#000;
+    text-align: right;
+}
+#footer .credits a{
+    color:#000;
+}
+@media (max-width:575px){
+    #footer .copyright, #footer .credits{
+        float:none;
+        text-align:center;
+    }
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+
+
+.tuna {
+    animation: walk-cycle 1s steps(12) infinite;
+    background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+    height: 200px;
+    width: 400px;
+    position: bottom;
+    bottom: 1px;
+    left: 50%;
+    margin-left: -200px;
+    transform: translateZ(0); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+  }
+  
+  @keyframes walk-cycle {  
+    0% {background-position: 0 0; } 
+    100% {background-position: 0 -2391px; } 
+  }
+  
+  .foreground, .midground, .background {
+    width: 100%;
+    height: 100%;
+    position: bottom;
+    top: 0; left: 0;
+    
+  }
+  
+  .foreground {
+    animation: parallax_fg linear 10s infinite both;
+    background:  url(http://stash.rachelnabors.com/24ways2012/foreground_grass.png) 0 100% repeat-x;
+    z-index: 3;
+  }
+  
+  @keyframes parallax_fg {  
+    0% { background-position: -3584px 100%;} 
+    100% {background-position: 0 100%; } 
+  }
+  
+  .midground {
+    animation: parallax_mg linear 20s infinite;
+    background:  url(http://stash.rachelnabors.com/24ways2012/midground_grass.png) 0 100% repeat-x;
+    z-index: 2;
+  }
+  
+  @keyframes parallax_mg {  
+    0% { background-position: -3000px 100%;} 
+    100% {background-position: 0 100%; } 
+  }
+  
+  .background {
+    background-image:
+      url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png),
+      url(http://stash.rachelnabors.com/24ways2012/background_mountain4.png),
+      url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),
+      url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),
+      url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    z-index: 1;
+    animation: parallax_bg linear 40s infinite;
+  }
+  
+  @keyframes parallax_bg {
+    100% { background-position-x: 2400px, 2000px, 1800px, 1600px, 1200px;}
+  }
+  
+  body {
+      background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),
+      #d2d2d2 url(http://stash.rachelnabors.com/24ways2012/background_clouds.png);
+  }
+
+
+
+
+
+
+
+  

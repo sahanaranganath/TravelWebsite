@@ -1,0 +1,28 @@
+h1{
+    border-style: solid;
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    background-color: black;
+     font-style: italic;}
+
+     h6{
+         color: grey;
+        font-style: oblique;
+     }
+
+p{
+    font-size: large;
+    color: black;
+   font-style: unset;
+}
+.card{
+    margin-left:30%;
+   
+    border-width: 50px;
+    padding: 20px;
+}
+.btn btn-primary{
+    text-align: center;
+}
+
